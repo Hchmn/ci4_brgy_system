@@ -10,6 +10,14 @@ use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
 /**
+ * MODELS
+ * 
+ */
+
+ use \App\Models\User;
+
+
+/**
  * Class BaseController
  *
  * BaseController provides a convenient place for loading components
@@ -53,6 +61,7 @@ abstract class BaseController extends Controller
 
         // Preload any models, libraries, etc, here.
 
+        $this->userModel = new User();
         // E.g.: $this->session = \Config\Services::session();
     }
 }
