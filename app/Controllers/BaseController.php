@@ -15,6 +15,14 @@ use Psr\Log\LoggerInterface;
  */
 
  use \App\Models\User;
+ use \App\Models\Blotter;
+ use \App\Models\BrgyOfficial;
+ use \App\Models\BrgyProfile;
+ use \App\Models\Certification;
+ use \App\Models\CertPaymentDetails;
+ use \App\Models\PaymentType;
+ use \App\Models\Purpose;
+ use \App\Models\Resident;
 
 
 /**
@@ -62,6 +70,14 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         $this->userModel = new User();
+        $this->blotterModel = new Blotter();
+        $this->brgyOfficialModel = new BrgyOfficial();
+        $this->certificationModel = new Certification();
+        $this->certPaymentDetailsModel = new CertPaymentDetails();
+        $this->paymentTypeModel = new PaymentType();
+        $this->purposeModel = new Purpose();
+        $this->residentModel = new Resident();
+        
         // E.g.: $this->session = \Config\Services::session();
     }
 }
