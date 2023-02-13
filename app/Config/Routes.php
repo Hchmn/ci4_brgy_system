@@ -40,6 +40,10 @@ $routes->post("registration", 'Home::userRegistration');
  */
 $routes->get("admin_dashboard", "Admin::dashboard");
 $routes->get('admin_home', "Admin::home");
+$routes->get('admin_brgyprofile', 'Admin::brgyProfile');
+$routes->get("admin_brgyofficial", 'Admin::brgyOfficial');
+$routes->get("admin_resident", "Admin::resident");
+$routes->get("admin_blotter", "Admin::blotter");
 
 
 

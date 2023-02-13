@@ -8,14 +8,12 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/admin_style.css" type="text/css">
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/table.css" type="text/css">
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/card-stat.css" type="text/css">
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/graph.css" type="text/css">
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/dropdown.css" type="text/css">
-        <script src="../assets/js/dropdown.js"></script>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script> -->
+        <script src="<?php echo base_url();?>/assets/js/dropdown.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
         <script src="<?php echo base_url();?>/assets/js/barGraph.js"></script>
         <script src="<?php echo base_url();?>/assets/js/pieChart.js"></script>
@@ -42,15 +40,15 @@
 
             <div class="ms-2 fw-bold"> <span class="name"> DASHBOARD</span></div>
 
-            <a href="admin_home" class="text-dark fw-bold"><i class="fa fa-home"></i> Home</a>
+            <a href="/admin_home" class="text-dark fw-bold"><i class="fa fa-home"></i> Home</a>
 
-            <a href="..\admin\BrgyProfile.php" class="text-dark fw-bold"><i class="fa fa-info-circle"></i> Barangay Profile</a>
+            <a href="/admin_brgyprofile" class="text-dark fw-bold"><i class="fa fa-info-circle"></i> Barangay Profile</a>
 
-            <a href="..\admin\BrgyOfficial.php" class="text-dark fw-bold"><i class="fa fa-file"></i> Barangay Officials</a>
+            <a href="/admin_brgyofficial" class="text-dark fw-bold"><i class="fa fa-file"></i> Barangay Officials</a>
 
-            <a href="..\admin\resident.php" class="text-dark fw-bold"><i class="fa fa-user"></i> Resident Record</a>
+            <a href="/admin_resident" class="text-dark fw-bold"><i class="fa fa-user"></i> Resident Record</a>
 
-            <a href="..\admin\blotter.php"class="text-dark fw-bold"><i class="fa fa-database"></i> Blotter Record</a>
+            <a href="/admin_blotter"class="text-dark fw-bold"><i class="fa fa-database"></i> Blotter Record</a>
 
             <div class="ms-2 fw-bold" class="text-dark fw-bold"><span class="name"> FORMS</span></div>
 
