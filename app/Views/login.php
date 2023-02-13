@@ -49,11 +49,21 @@
                         <?php
                              endif;
                         ?>
+                        <?php 
+                            if(session()->has("registered")): 
+                        ?> 
+                        <div class="row  ml-1 mr-1 mt-2 px-3 alert alert-success text-center">
+                            
+                            <?php echo session()->get("registered");?>
+                        </div>
+                        <?php
+                             endif;
+                        ?>
                         <div class="row mb-3 px-3 mt-3">
                             <button type="submit" class="btn btn-primary">Login</button>
                         </div>
                         <div class="row mb-4 px-3">
-                            <small class="font-weight-bold">Don't have an account? <a href="../connection/signup.php">Register here.</a></small>
+                            <small class="font-weight-bold">Don't have an account? <a href="signup">Register here.</a></small>
                         </div>
                     </div>
                 </div>
