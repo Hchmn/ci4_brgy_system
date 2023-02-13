@@ -34,6 +34,18 @@ $routes->post("login", 'Home::userLogin');
 $routes->get("signup", 'Home::userSignup');
 $routes->post("registration", 'Home::userRegistration');
 
+
+/**
+ * ADMIN ROUTES
+ */
+$routes->get("admin_dashboard", "Admin::dashboard");
+$routes->get('admin_home', "Admin::home");
+
+
+
+
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

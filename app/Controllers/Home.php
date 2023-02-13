@@ -18,7 +18,8 @@ class Home extends BaseController
             $queryUser = $this->userModel->where("username", $username)->where("password", $password)->first();
 
             if($queryUser){
-                
+                $this->setSession($queryUser);
+                return redirect()->to("admin_dashboard");
             }
             else{
                 session()->setFlashdata("Invalid", "Invalid Password");
@@ -26,6 +27,15 @@ class Home extends BaseController
             }
         }
 
+    }
+
+    public function setSession($data){
+        $data = [
+            "id" => $data["id"],
+        ];
+
+        session()->set($data);
+        return true;
     }
 
     public function userSignUp(){
